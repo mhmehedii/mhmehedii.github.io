@@ -60,16 +60,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Mobile menu toggle
     const menuToggle = document.querySelector(".menu-toggle");
-    const navUl = document.querySelector("nav ul");
+    const navMenu = document.querySelector(".nav-menu");
 
     menuToggle.addEventListener("click", () => {
-        navUl.classList.toggle("show");
+        navMenu.classList.toggle("active");
     });
 
     // Close mobile menu on link click
-    document.querySelectorAll("nav ul li a").forEach(link => {
+    document.querySelectorAll(".nav-link").forEach(link => {
         link.addEventListener("click", () => {
-            navUl.classList.remove("show");
+            navMenu.classList.remove("active");
         });
     });
 });
