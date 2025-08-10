@@ -57,4 +57,12 @@ document.addEventListener("DOMContentLoaded", function() {
         autoplay: true,
         path: '3D Hologram.json'
     });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navUl = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", () => {
+        navUl.classList.toggle("show");
+    });
 });
