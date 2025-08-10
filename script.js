@@ -65,4 +65,11 @@ document.addEventListener("DOMContentLoaded", function() {
     menuToggle.addEventListener("click", () => {
         navUl.classList.toggle("show");
     });
+
+    // Close mobile menu on link click
+    document.querySelectorAll("nav ul li a").forEach(link => {
+        link.addEventListener("click", () => {
+            navUl.classList.remove("show");
+        });
+    });
 });
