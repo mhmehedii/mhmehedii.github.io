@@ -47,13 +47,13 @@ nav a:hover {
     box-shadow: 0 0 30px var(--accent-color);
 }
 
-.hero-button {
-    background: var(--accent-color);
-    color: #0f0c29;
-    font-weight: 700;
-    border-radius: 50px;
-    padding: 15px 40px;
-    transition: transform 0.3s, box-shadow 0.3s;
+.hero-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--accent-color);
+}
+
+.menu-toggle {
+    display: none;
 }
 
 .scroll-to-top:hover {
@@ -351,11 +351,6 @@ nav a:hover {
 
     nav ul.show {
         display: flex;
-    }
-
-    nav ul li {
-        text-align: center;
-        margin: 0.5rem 0;
     }
 
     .menu-toggle {
